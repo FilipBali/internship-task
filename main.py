@@ -34,8 +34,8 @@ def get_median(arr):
 def print_results():
     print('Number of unique users: {}'.format(len(unique_users)))
     print('Number of unique requests: {}'.format(len(unique_items)))
-    print('Average time between item_id requests: {}'.format(sum(request_diff_arr) / len(request_diff_arr)))
-    print('Median time between item_id requests: {}'.format(get_median(request_diff_arr)))
+    print('Average time between item_id requests: {:.4f} seconds.'.format(sum(request_diff_arr) / len(request_diff_arr)))
+    print('Median time between item_id requests: {:.4f} seconds.'.format(get_median(request_diff_arr)))
     print('Maximum number of requests per a single item_id for which the variant '
           'similarInJsonList: {}'.format(similarInJsonList_counter))
 
